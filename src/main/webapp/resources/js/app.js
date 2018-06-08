@@ -24,6 +24,13 @@ app.controller('getController', function ($scope, $http, $location, $window) {
         });
     };
 
+    $scope.getT_Id = function () {
+        var url = "getT_Id";
+        $http.get(url, config).then(function (response) {
+            $scope.t_id = response.data;
+        });
+    };
+
     $scope.getTrainerWorkout = function () {
         var url = "getTrainerWorkout";
         $http.get(url, config).then(function (response) {

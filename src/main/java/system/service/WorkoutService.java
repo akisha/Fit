@@ -48,4 +48,8 @@ public class WorkoutService {
         return workout.getId();
     }
 
+    public int getT_Id(WorkoutDTO workoutDTO){
+        return workoutDTO.getTrainer_id();
+    }
+
 }

@@ -25,5 +25,10 @@ public class WorkoutRestController {
         return workoutService.getAllWorkouts();
     }
 
+    @RequestMapping(value = "/getT_Id", method = RequestMethod.GET)
+    public int getT_Id(@RequestBody WorkoutDTO workoutDTO){
+        return workoutService.getT_Id(workoutDTO);
+    }
+
 
 }

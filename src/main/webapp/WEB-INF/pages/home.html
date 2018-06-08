@@ -93,7 +93,7 @@
             <th>Цена</th>
             <th>Осталось</th>
             <th>Статус</th>
-            <th>ID тренера</th>>
+            <!-- <th>ID тренера</th> -->
         </tr>
         </thead>
         <tbody>
@@ -103,7 +103,7 @@
             <td>{{workout.price}}</td>
             <td>{{workout.remain}}</td>
             <td>{{workout.status}}</td>
-            <td>{{workout.trainer_id}}</td>
+            <!-- <td ng-init="getT_Id()">{{t_id}}</td> -->
             <td><form ng-if="username!='anonymousUser'" name="post" ng-submit="addWorkoutToUser()">
                 <button type="submit" ng-click="setId(workout.id)"
                         class="btn btn-primary">Забронировать</button>
@@ -114,7 +114,8 @@
         </tr>
         </tbody>
     </table>
-    <div class="form-group row h3">
+
+    <!-- <div class="form-group row h3">
         <label class="col-sm-4 col-form-label">Все тренеры</label>
     </div>
 
@@ -131,7 +132,7 @@
             <td>{{user.name}}</td>
         </tr>
         </tbody>
-    </table>
+    </table> -->
 </div>
 
 
