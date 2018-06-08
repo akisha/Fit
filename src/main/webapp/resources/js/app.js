@@ -20,7 +20,7 @@ app.controller('getController', function ($scope, $http, $location, $window) {
     $scope.getUserPass = function () {
         var url = "getUserPass";
         $http.get(url, config).then(function (response) {
-            $scope.workouts = response.data;
+            $scope.passes = response.data;
         });
     };
 
