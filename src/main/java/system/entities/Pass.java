@@ -27,12 +27,12 @@ public class Pass
     @Column(name = "remain", nullable = false)
     private int remain;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "type_id", nullable = false)
     @JsonIgnore
     private WorkoutType type;
 
-    @ManyToMany(mappedBy = "passes", fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "passes")
     private List<User> users;
 
     public int getId() {
